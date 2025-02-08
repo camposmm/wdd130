@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - White Water Rafting</title>
+  <meta name="description" content="Contact White Water Rafting for inquiries, reservations, or suggestions. Reach out to us via phone, email, or our contact form.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Rafting Site Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Company Information -->
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 123 Rafting St, Adventure City, AC 12345</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2070.477068050391!2d-40.31343699268118!3d-15.42007561830623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1739041905364!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- Employee Profiles -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-grid">
+        <figure>
+          <img src="images/employee1.jpg" alt="Employee 1">
+          <figcaption>John Doe - Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Employee 2">
+          <figcaption>Jane Smith - Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Employee 3">
+          <figcaption>Mike Johnson - Instructor</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Purpose of Message:</label>
+        <div class="radio-group">
+          <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+          <label for="general">General Inquiry</label>
+          <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+          <label for="reservation">Reservation Question</label>
+          <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+          <label for="suggestion">Website Suggestion</label>
+        </div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe" value="yes">
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 White Water Rafting | Marcos Murilo Campos</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </nav>
+    <a href="https://app.moqups.com/WltXM8nTXgbTuMKvlWQKgNTgPkfe33oY/view/page/ad12de680">View Wireframe</a>
+  </footer>
+</body>
+</html>
