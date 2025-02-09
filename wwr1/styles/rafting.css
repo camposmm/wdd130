@@ -30,7 +30,7 @@ a {
 
 /* Header Styles */
 header {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -85,10 +85,40 @@ nav a {
   height: auto;
 }
 
-/* History Section */
-.history {
-  margin: 2rem 0;
-  padding: 0 1rem;
+#history {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.history-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-column {
+  flex: 1;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.image-column {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Adventures Section */
