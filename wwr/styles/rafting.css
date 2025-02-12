@@ -31,6 +31,7 @@ a {
 /* Header Styles */
 header {
   display: grid;
+  grid-template-columns: 200px auto;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -39,6 +40,10 @@ header {
 
 header img {
   height: 50px;
+}
+
+nav {
+  display: flex;
 }
 
 nav a {
@@ -136,6 +141,7 @@ nav a {
 .adventure-grid figure {
   flex: 1 1 auto;
   text-align: center;
+  margin: 0;
 }
 
 .adventure-grid img {
