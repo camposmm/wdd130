@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Define CSS Variables */
 :root {
@@ -31,8 +30,7 @@ a {
 
 /* Header Styles */
 header {
-  display: grid;
-  grid-template-columns: 200px auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -41,10 +39,6 @@ header {
 
 header img {
   height: 50px;
-}
-
-nav {
-  display: flex;
 }
 
 nav a {
@@ -91,40 +85,10 @@ nav a {
   height: auto;
 }
 
-#history {
-  padding: 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.history-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.history-content h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.text-column {
-  flex: 1;
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-.image-column {
-  flex: 1;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+/* History Section */
+.history {
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
 
 /* Adventures Section */
@@ -142,7 +106,6 @@ nav a {
 .adventure-grid figure {
   flex: 1 1 auto;
   text-align: center;
-  margin: 0;
 }
 
 .adventure-grid img {
@@ -171,3 +134,97 @@ footer {
   width: 24px;
   margin: 0 0.5rem;
 }
+/* Contact Information Section */
+.contact-info {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  /* Employee Profiles Section */
+  .employees {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .employee-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .employee-grid figure {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .employee-grid img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .employee-grid figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Contact Form Section */
+  .contact-form {
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form .radio-group {
+    margin: 0.5rem 0;
+  }
+  
+  .contact-form .radio-group label {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: normal;
+  }
+  
+  .contact-form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--accent1-color);
+  }
