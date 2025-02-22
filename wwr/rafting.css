@@ -1,212 +1,254 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  header {
-    display: grid;
-    grid-template-columns: 200px auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #00e5ff;
-    color: #fff;
-  }
-  
-  header .logo img {
-    height: 50px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Hero Section */
-  .hero {
-    position: relative;
-    text-align: center;
-  }
-  
-  .hero img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Content Grid */
-  .content-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  .grid-item {
-    text-align: center;
-  }
-  
-  .grid-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Newsletter Section */
-  .newsletter {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
-  }
-  
-  .newsletter form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .newsletter input {
-    padding: 0.5rem;
-    width: 300px;
-    max-width: 100%;
-  }
-  
-  .newsletter button {
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Call to Action */
-  .cta {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .cta-button {
-    padding: 1rem 2rem;
-    background-color: #ff6600;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .social-links img {
-    height: 24px;
-    margin: 0 0.5rem;
-  }
-  /* Call to Action */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 200px auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #00e5ff;
+  color: #fff;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Newsletter Section */
+.newsletter {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  width: 300px;
+  max-width: 100%;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Call to Action */
 .cta {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+  padding: 2rem;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.trip-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-card h3 {
+  margin: 1rem 0;
+}
+
+.trip-card p {
+  padding: 0 1rem;
+}
+
+.trip-button {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Trip Table */
+.trip-table {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.social-links img {
+  height: 24px;
+  margin: 0 0.5rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust header for smaller screens */
+  header {
+    grid-template-columns: 1fr; /* Stack logo and nav vertically */
     text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
   }
-  
-  .cta-button {
-    padding: 1rem 2rem;
-    background-color: #ff6600;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+
+  nav ul {
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 0.5rem;
   }
-  
-  /* Trip Descriptions */
-  .trip-descriptions {
-    padding: 2rem;
+
+  /* Adjust hero section for smaller screens */
+  .hero h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
   }
-  
+
+  /* Adjust content grid for smaller screens */
+  .content-grid {
+    grid-template-columns: 1fr; /* Stack grid items vertically */
+  }
+
+  /* Adjust trip grid for smaller screens */
   .trip-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
   }
-  
-  .trip-card {
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
+
+  /* Adjust newsletter form for smaller screens */
+  .newsletter form {
+    width: 100%; /* Full width for smaller screens */
   }
-  
-  .trip-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .trip-card h3 {
-    margin: 1rem 0;
-  }
-  
-  .trip-card p {
-    padding: 0 1rem;
-  }
-  
-  .trip-button {
-    display: inline-block;
-    margin: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* Trip Table */
-  .trip-table {
-    padding: 2rem;
-  }
-  
+
+  /* Adjust trip table for smaller screens */
   table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+    display: block;
+    overflow-x: auto; /* Allow horizontal scrolling for tables */
   }
-  
-  th, td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .hero h1 {
+    font-size: 1.5rem; /* Even smaller font size */
   }
-  
-  th {
-    background-color: #333;
-    color: #fff;
+
+  /* Adjust trip grid for very small screens */
+  .trip-grid {
+    grid-template-columns: 1fr; /* Stack trip cards vertically */
   }
-  
-  /* Footer Link to Wireframe */
-  footer a {
-    color: #fff;
-    text-decoration: underline;
+
+  /* Adjust newsletter input for very small screens */
+  .newsletter input {
+    width: 100%; /* Full width for very small screens */
   }
+}

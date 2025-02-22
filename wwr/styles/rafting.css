@@ -15,8 +15,8 @@ body {
   font-family: var(--text-font);
   margin: 0;
   padding: 0;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
 }
 
 h1, h2 {
@@ -43,7 +43,7 @@ header img {
 
 nav a {
   margin: 0 1rem;
-  color: white;
+  color: var(--accent2-color);
   font-weight: bold;
 }
 
@@ -65,7 +65,7 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem; /* Adjusted for smaller screens */
 }
 
 .hero article {
@@ -76,12 +76,13 @@ nav a {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 8px;
+  width: 90%; /* Adjusted for smaller screens */
 }
 
 .hero article img {
   float: right;
   margin-left: 1rem;
-  width: 150px;
+  width: 100px; /* Adjusted for smaller screens */
   height: auto;
 }
 
@@ -106,6 +107,7 @@ nav a {
 .adventure-grid figure {
   flex: 1 1 auto;
   text-align: center;
+  min-width: 200px; /* Ensure figures don't get too small */
 }
 
 .adventure-grid img {
@@ -134,97 +136,161 @@ footer {
   width: 24px;
   margin: 0 0.5rem;
 }
+
 /* Contact Information Section */
 .contact-info {
-    margin: 2rem 0;
-    padding: 0 1rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 1rem;
+}
+
+/* Employee Profiles Section */
+.employees {
+  margin: 2rem 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.employee-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.employee-grid figure {
+  flex: 1 1 200px; /* Allow figures to wrap and adjust size */
+  text-align: center;
+}
+
+.employee-grid img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.employee-grid figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Contact Form Section */
+.contact-form {
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form .radio-group {
+  margin: 0.5rem 0;
+}
+
+.contact-form .radio-group label {
+  display: inline-block;
+  margin-right: 1rem;
+  font-weight: normal;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust header for smaller screens */
+  header {
+    flex-direction: column;
     text-align: center;
   }
-  
-  .contact-info p {
-    margin: 0.5rem 0;
-  }
-  
-  .map iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    margin-top: 1rem;
-  }
-  
-  /* Employee Profiles Section */
-  .employees {
-    margin: 2rem 0;
-    padding: 0 1rem;
-    text-align: center;
-  }
-  
-  .employee-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .employee-grid figure {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .employee-grid img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .employee-grid figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-  }
-  
-  /* Contact Form Section */
-  .contact-form {
-    margin: 2rem 0;
-    padding: 0 1rem;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-    font-weight: bold;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
+
+  header img {
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
   }
-  
-  .contact-form .radio-group {
+
+  nav a {
+    display: block;
     margin: 0.5rem 0;
   }
-  
-  .contact-form .radio-group label {
-    display: inline-block;
-    margin-right: 1rem;
-    font-weight: normal;
+
+  /* Adjust hero section for smaller screens */
+  .hero h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+    top: 15%;
   }
-  
-  .contact-form button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
+
+  .hero article {
+    width: 90%; /* Full width for smaller screens */
+    padding: 0.5rem;
   }
-  
-  .contact-form button:hover {
-    background-color: var(--accent1-color);
+
+  .hero article img {
+    width: 80px; /* Smaller image for mobile */
   }
+
+  /* Adjust employee grid for smaller screens */
+  .employee-grid figure {
+    flex: 1 1 100%; /* Full width for mobile */
+  }
+
+  /* Adjust adventure grid for smaller screens */
+  .adventure-grid figure {
+    min-width: 150px; /* Smaller figures for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .hero h1 {
+    font-size: 1.5rem; /* Even smaller font size */
+  }
+
+  .hero article img {
+    display: none; /* Hide image on very small screens */
+  }
+
+  .adventure-grid {
+    flex-direction: column; /* Stack figures vertically */
+  }
+
+  .adventure-grid figure {
+    width: 100%; /* Full width for very small screens */
+  }
+}
