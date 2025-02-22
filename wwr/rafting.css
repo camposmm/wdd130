@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  display: grid;
+  display: flex;
   grid-template-columns: 200px auto;
   justify-content: space-between;
   align-items: center;
